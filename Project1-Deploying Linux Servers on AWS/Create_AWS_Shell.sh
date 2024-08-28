@@ -137,4 +137,3 @@ WORKER_NODE2=$(aws ec2 run-instances \
     --query 'Instances[0].InstanceId')
 
 echo "Instance Worker Node 2 $WORKER_NODE2 created successfully."
-echo "Linux Servers are created successfully"

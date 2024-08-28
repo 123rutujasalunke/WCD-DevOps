@@ -11,5 +11,3 @@ Projects developed for the **Applied DevOps Engineering Diploma** at WeCloudData
   - Securely access, configure, and manage multiple servers remotely using SSH.
 
 ---
-
-_Stay tuned for more projects showcasing different aspects of DevOps and Cloud engineering!_

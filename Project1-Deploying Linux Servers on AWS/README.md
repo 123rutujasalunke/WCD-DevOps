@@ -1,14 +1,14 @@
-# **Project 1 - Linux Server on AWS**
+# **Project 1 - Deploying Linux Server on AWS**
 This project deploys an AWS cloud infrastructure using the AWS CLI command line tool and a Bash Shell script. The AWS cloud environment has a VPC, internet gateway, public subnet, public route table, and three EC2 instances. The EC2 instances must be in the same public subnet and VPC, reachable to each other, and accessible remotely by SSH. Moreover, the cases must have installed Python 3.10, Node 18.0, Java 11.0, and Docker engine.
 
-URL for the public GitHub repo: https://github.com/caroldelwing/WCD-DevOps/tree/main/project_1
+Click here for my [GitHub repo](https://github.com/123rutujasalunke/WCD-DevOps/tree/main/Project1-Deploying%20Linux%20Servers%20on%20AWS)
 
 # Table of contents
-- Getting Started
-- Installation
-- Usage
-- Network Diagram
-- Authors
+- [Getting Started](#getting-started-point_down)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Network Diagram](#network-diagram)
+- [Author](#author)
 
 ## Getting Started :point_down:
 To be able to run the script, you'll need an AWS account, an IAM (Identity and Access Management) user with the right permissions, and a secret access key (download the file with your secret access key, you'll need it later). We used a user with the 'AdministratorAcess' policy attached. For more info about IAM users and secret access keys, go to: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html
@@ -26,10 +26,11 @@ Access the following link for more info about how to install AWS CLI: https://do
 To access your AWS account, execute the following command in your terminal:
 ````
 $ aws configure
-AWS Access Key ID [None]: paste your access key id
-AWS Secret Access Key [None]: paste your secret access key
+AWS Access Key ID [None]: _paste your access key id_
+AWS Secret Access Key [None]: _paste your secret access key_
 Default region name [None]: us-east-1
 Default output format [None]:
+
 ````
 
 ## Installation
@@ -50,13 +51,13 @@ The main script is responsible for creating the cloud architecture, while the au
 
 Running the script:
 ````
-$ chmod +x linux_server_aws_setup.sh userdata.sh
-$ ./linux_server_aws_setup.sh
+$ chmod +x Create_AWS_Shell.sh isntall-software.sh
+$ ./Create_AWS_Shell.sh
 ````
 After executing the script, go to the AWS Console in the us-east-1 region, and you will be able to see the EC2 instances running. Wait for the Status Checks to be completed to check the version of the software installed in each instance. If you want to rerun the same script, you'll have to manually delete the created SSH key pair on the AWS Console and your machine. 
 
 ## Network Diagram
-Project 1 network diagram.
+<img width="591" alt="Network diagram-Project 1" src="https://github.com/user-attachments/assets/8cac2294-7f8b-411e-8ac8-49dd6b059741">
 
 ## Author
 Rutuja Salunke - https://github.com/123rutujasalunke

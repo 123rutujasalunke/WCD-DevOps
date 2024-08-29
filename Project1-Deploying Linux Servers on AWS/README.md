@@ -51,7 +51,7 @@ The main script is responsible for creating the cloud architecture, while the au
 
 Running the script:
 ````
-$ chmod +x Create_AWS_Shell.sh isntall-software.sh
+$ chmod +x Create_AWS_Shell.sh install-software.sh
 $ ./Create_AWS_Shell.sh
 ````
 After executing the script, go to the AWS Console in the us-east-1 region, and you will be able to see the EC2 instances running. Wait for the Status Checks to be completed to check the version of the software installed in each instance. If you want to rerun the same script, you'll have to manually delete the created SSH key pair on the AWS Console and your machine. 

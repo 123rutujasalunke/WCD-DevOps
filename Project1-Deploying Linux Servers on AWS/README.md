@@ -17,15 +17,15 @@ Once the user is created on the AWS Console, open a new Linux terminal in your m
 
 Use the following command to install AWS CLI:
 ````
-$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-$ unzip awscliv2.zip
-$ sudo ./aws/install
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 ````
 Access the following link for more info about how to install AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 To access your AWS account, execute the following command in your terminal:
 ````
-$ aws configure
+aws configure
 AWS Access Key ID [None]: _paste your access key id_
 AWS Secret Access Key [None]: _paste your secret access key_
 Default region name [None]: us-east-1
@@ -40,7 +40,7 @@ To install Git, please go to this link and follow the steps: https://git-scm.com
 
 Cloning the repository:
 ````
-$ git clone https://github.com/123rutujasalunke/WCD-DevOps
+git clone https://github.com/123rutujasalunke/WCD-DevOps
 ````
 Option 2: Download the scripts and save in your local machine.
 
@@ -51,8 +51,9 @@ The main script is responsible for creating the cloud architecture, while the au
 
 Running the script:
 ````
-$ chmod +x Create_AWS_Shell.sh install-software.sh
-$ ./Create_AWS_Shell.sh
+cd WCD-DevOps/Project1-Deploying\ Linux\ Servers\ on\ AWS/
+chmod +x Create_AWS_Shell.sh install-software.sh
+./Create_AWS_Shell.sh
 ````
 After executing the script, go to the AWS Console in the us-east-1 region, and you will be able to see the EC2 instances running. Wait for the Status Checks to be completed to check the version of the software installed in each instance. If you want to rerun the same script, you'll have to manually delete the created SSH key pair on the AWS Console and your machine. 
 
